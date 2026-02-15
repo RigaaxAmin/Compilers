@@ -1,0 +1,45 @@
+	=---------------------------------------=
+	|  COMPILERS - ALGONQUIN COLLEGE (W26)  |
+	=---------------------------------------=
+	    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    
+	    @@                             @@    
+	    @@           %&@@@@@@@@@@@     @@    
+	    @@       @%% (@@@@@@@@@  @     @@    
+	    @@      @& @   @ @       @     @@    
+	    @@     @ @ %  / /   @@@@@@     @@    
+	    @@      & @ @  @@              @@    
+	    @@       @/ @*@ @ @   @        @@    
+	    @@           @@@@  @@ @ @      @@    
+	    @@            /@@    @@@ @     @@    
+	    @@     @      / /     @@ @     @@    
+	    @@     @ @@   /@/   @@@ @      @@    
+	    @@     @@@@@@@@@@@@@@@         @@    
+	    @@                             @@    
+	    @@         R I G A A X         @@    
+	    @@                             @@    
+	    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    
+	                                         
+	[COMPILER SCRIPT .......................]
+	                                         
+
+[Option '2': Starting READER .....]
+
+Reading file Hello.rigaax ....Please wait
+The input file Hello.rigaax has not been completely loaded.
+Current size of buffer: 100.
+Input file size: 0
+
+Printing buffer parameters:
+
+The size of the buffer is:  100
+The current size of the buffer is:  0
+The first symbol in the buffer is:   
+The value of the flags:
+EMP: 1  FUL: 0  END: 0  REL: 0
+Checksum: 0
+Reader statistics : 
+Number of errors: 0
+
+Printing buffer contents:
+
+Empty buffer

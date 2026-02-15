@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.VC.db
+
+# Build folders
+**/x64/
+**/Debug/
+**/Release/
+
+# Compiled files
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.log
+*.tlog
