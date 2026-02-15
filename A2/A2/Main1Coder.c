@@ -2,7 +2,7 @@
 ************************************************************
 * COMPILERS COURSE - Algonquin College
 * Code version: WINTER, 2026
-* Author: To-DO:
+* Author: Suleiman Amin - 041 130 274 / Blessy Joy - 041 134 4029
 * Student Name: Suleiman Amin
 * Student ID: 041130274
 * Professors: Paulo Sousa
