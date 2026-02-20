@@ -365,33 +365,34 @@ rigaax_intg readerPrint(BufferPointer const readerPointer) {
 *************************************************************
 */
 rigaax_intg readerLoad(BufferPointer const readerPointer, rigaax_strg fileName) {
-	if (!readerPointer || !readerPointer->content || !fileName) {
-		errorPrint("Invalid reader pointer/content or fileName\n");
-		return READER_ERROR;
-	}
+    if (!readerPointer || !readerPointer->content || !fileName) {
+        errorPrint("Invalid reader pointer/content or fileName\n");
+        return READER_ERROR;
+    }
 
-	/* decode whole file into memory string */
-	rigaax_strg decoded = vigenereMem(fileName, STR_LANGNAME, DECYPHER);
-	if (!decoded) {
-		errorPrint("vigenereMem failed\n");
-		return READER_ERROR;
-	}
+    /* Decrypt whole file into memory */
+    rigaax_strg decoded = vigenereMem(fileName, STR_LANGNAME, DECYPHER);
+    if (!decoded) {
+        errorPrint("vigenereMem failed (check key/mode/file)\n");
+        return READER_ERROR;
+    }
 
-	/* clear old content before load (common in A12) */
-	readerClear(readerPointer);
+    /* Clear buffer first */
+    readerClear(readerPointer);
 
-	rigaax_intg loaded = 0;
-	for (rigaax_intg i = 0; decoded[i] != '\0'; ++i) {
-		if (!readerAddChar(readerPointer, decoded[i])) {
-			free(decoded);
-			errorPrint("Failed to add char while loading\n");
-			return READER_ERROR;
-		}
-		loaded++;
-	}
+    /* Load decrypted string into buffer */
+    rigaax_intg loaded = 0;
+    for (rigaax_intg i = 0; decoded[i] != '\0'; ++i) {
+        if (!readerAddChar(readerPointer, decoded[i])) {
+            free(decoded);
+            errorPrint("Failed to add char while loading\n");
+            return READER_ERROR;
+        }
+        loaded++;
+    }
 
-	free(decoded);
-	return loaded;
+    free(decoded);
+    return loaded;
 }
 
 
