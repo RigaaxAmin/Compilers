@@ -3,6 +3,7 @@
 *.user
 *.suo
 *.VC.db
+*.sln.docstates
 
 # Build folders
 **/x64/
@@ -16,3 +17,8 @@
 *.ilk
 *.log
 *.tlog
+
+# Output / test files
+out.txt
+err.txt
+CODED.txt
